@@ -1,2 +1,6 @@
-# China-Counties
-China’s Provincial Borders: Geographic Determinants – EMA thesis, Fudan University (复旦大学)
+# Chinese Counties: Geographic Determinants
+
+Materials for my MA thesis at Fudan University (复旦大学)
+
+## Updates
+18.04.12: Added slides for thesis proposal
