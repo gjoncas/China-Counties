@@ -8,6 +8,10 @@ The idea is to find why some parts of China have lots of counties, and others do
 
 The motivation is that counties compete with one another for firm investment through their economic policies
 <br>The more counties in an area, the fiercer competition is — so county density helps explain policy choices
+<br>But local governments in China often adjust borders for political reasons, e.g. to inflate GDP statistics
+
+So we can't explain policy with county density, since county density can be influenced by policy (endogeneity)
+<br>We need a variable correlated with county density, but not influenced by policy — such as geographic factors
 <br>Thus, this study will help researchers use geographic data as an instrumental variable for county density
 
 ## Updates
