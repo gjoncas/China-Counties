@@ -1,4 +1,4 @@
-# Chinese Inter-County Competition and Pro-Business Policy
+# Chinese Inter-County Competition & Pro-Business Policy
 
 Materials for my MA thesis at Fudan University (复旦大学)
 
