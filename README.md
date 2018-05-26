@@ -4,16 +4,16 @@ Materials for my MA thesis at Fudan University (复旦大学)
 
 The idea is, counties want to attract investment, but firms don't care if they locate in one county or another nearby.
 <br>So counties have to compete with one another for firm investment: the more counties, the fiercer competition is.
-<br>Some experts (e.g. Cheung, <a href="https://www.degruyter.com/view/j/me.2014.1.issue-1/me-2014-0008/me-2014-0008.xml?format=INT">2014</a>) think inter-county competition is the main reason for China's economic success.
+<br>Some experts (e.g. Cheung, <a href="https://www.degruyter.com/view/j/me.2014.1.issue-1/me-2014-0008/me-2014-0008.xml?format=INT">2014</a>) think inter-county competition is <i>the</i> main reason for China's economic success.
 
 We can measure pro-business policy by the effective tax rate — how much of the federal tax rate is actually enforced.
 <br>A problem is, there might be some causal factor that affects both county density and the tax rate.
 <br>For example, an area richer to begin with will have more counties and also more development (which will affect taxes).
 <br>We need a variable correlated with county density, but not economic development
 
-Thus, this study uses geographic data as an instrumental variable for county density, controlling for development
-<br>To do this I'm using geographic data from ArcGIS, such as land elevation & agricultural productivity
-<br>Then I'll use regression analysis with Python to determine how these geographic factors influence pro-business policy
+This study uses geography as an instrumental variable for county density, controlling for development.
+<br>I'll use the software ArcGIS to analyze geographic data for land elevation & agricultural productivity.
+<br>Then I'll use regression analysis with Python to determine how these influence pro-business policy.
 
 
 ## Updates
