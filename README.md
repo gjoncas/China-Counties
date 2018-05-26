@@ -1,18 +1,21 @@
-# Chinese Counties: Geographic Determinants
+# Chinese Inter-County Competition and Pro-Business Policy
 
 Materials for my MA thesis at Fudan University (复旦大学)
 
-The idea is to find why some parts of China have lots of counties, and others don't
+The idea is, counties want to attract investment, but firms don't care if they locate in one county or another nearby.
+<br>So counties have to compete with one another for firm investment: the more counties, the fiercer competition is.
+<br>Some experts (e.g. Cheung, <a href="https://www.degruyter.com/view/j/me.2014.1.issue-1/me-2014-0008/me-2014-0008.xml?format=INT">2014</a>) think inter-county competition is the main reason for China's economic success.
+
+We can measure pro-business policy by the effective tax rate — how much of the federal tax rate is actually enforced.
+<br>A problem is, there might be some causal factor that affects both county density and the tax rate.
+<br>For example, an area richer to begin with will have more counties and also more development (which will affect taxes).
+<br>We need a variable correlated with county density, but not economic development
+
+Thus, this study uses geographic data as an instrumental variable for county density, controlling for development
 <br>To do this I'm using geographic data from ArcGIS, such as land elevation & agricultural productivity
-<br>Then I'll use regression analysis with Python to determine how these geographic factors influence county density
+<br>Then I'll use regression analysis with Python to determine how these geographic factors influence pro-business policy
 
-The motivation is that counties compete with one another for firm investment through their economic policies
-<br>The more counties in an area, the fiercer competition is — so county density helps explain policy choices
-<br>But local governments in China often adjust borders for political reasons, e.g. to inflate GDP statistics
-
-So we can't explain policy with county density, since county density can be influenced by policy (endogeneity)
-<br>We need a variable correlated with county density, but not influenced by policy — such as geographic factors
-<br>Thus, this study will help researchers use geographic data as an instrumental variable for county density
 
 ## Updates
 18.04.12: Added slides for thesis proposal
+<br>18.05.26: Updated précis, added new slides
