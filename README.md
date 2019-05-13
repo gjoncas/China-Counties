@@ -19,3 +19,4 @@ This study uses geography as an instrumental variable for county density, contro
 ## Updates
 18.04.12: Added slides for thesis proposal
 <br>18.05.26: Updated précis, added new slides
+<br>19.05.13: Added slides for thesis defense
