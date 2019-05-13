@@ -13,7 +13,7 @@ We can measure pro-business policy by the effective tax rate — how much of the
 
 This study uses geography as an instrumental variable for county density, controlling for development.
 <br>I'll use the software ArcGIS to analyze geographic data for land elevation & agricultural productivity.
-<br>Then I'll use regression analysis with Python to determine how these influence pro-business policy.
+<br>Then I'll use regression analysis with Stata to determine how these influence pro-business policy.
 
 
 ## Updates
