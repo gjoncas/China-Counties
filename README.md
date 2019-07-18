@@ -12,11 +12,27 @@ We can measure pro-business policy by the effective tax rate — how much of the
 <br>To overcome endogeneity, we need a variable correlated with county density, but not economic development.
 
 This study uses geography as an instrumental variable for county density, controlling for development.
-<br>I'll use the software ArcGIS to analyze geographic data for land elevation & agricultural productivity.
-<br>Then I'll use regression analysis with Stata to determine how these influence pro-business policy.
+<br>I use the software ArcGIS to analyze geographic data for land elevation & agricultural productivity.
+<br>Then I use regression analysis with Stata to determine how these influence pro-business policy.
 
+## assembleData.R
+<ul>
+<li>Works with geographic data extracted using ArcGIS, contained in Excel files (available on request)</li>
+<li>Cleans counties with missing values, salvages values by using data for neighbouring counties</li>
+<li>Uses run length encoder to repeat geographic data for firms in each county </li>
+<li>After running, the data are assembled into a regression that can be run in R or Stata</li>
+</ul>
 
-## Updates
-18.04.12: Added slides for thesis proposal
-<br>18.05.26: Updated précis, added new slides
-<br>19.05.13: Added slides for thesis defense
+## density.R
+<ul>
+<li>Uses county adjacency & centroid data extracted with ArcGIS (available on request)</li>
+<li>To reduce search space, uses neighbours within a given 'depth' (e.g. neighbours of neighbours is depth 2)</li>
+<li>Density for a given county is its number of neighbours whose centroid is within 100km of that county's centroid</li>
+</ul>
+
+## robustness.R
+<ul>
+<li>Reassembles data using only adjacent neighbours (sharing a border), rather than within 100km</li>
+<li>Experiments with different specifications for tax enforcements from the firm-level data</li>
+<li>Reassembles data for a subset of counties for which GDP data is available</li>
+</ul>
