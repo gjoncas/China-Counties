@@ -15,7 +15,16 @@ This study uses geography as an instrumental variable for county density, contro
 <br>I use the software ArcGIS to analyze geographic data for land elevation & agricultural productivity.
 <br>Then I use regression analysis with Stata to determine how these influence pro-business policy.
 
-## assembleData.R
+## Code – Brief Outline
+
+<b>density.R</b>
+<ul>
+<li>Uses county adjacency & centroid data extracted from ArcGIS as Excel files (available on request)</li>
+<li>To reduce search space, uses neighbours within a given 'depth' (e.g. neighbours of neighbours is depth 2)</li>
+<li>Density for a given county is its number of neighbours whose centroid is within 100km of that county's centroid</li>
+</ul>
+
+<b>assembleData.R</b>
 <ul>
 <li>Works with geographic data extracted using ArcGIS, contained in Excel files (available on request)</li>
 <li>Cleans counties with missing values, salvages values by using data for neighbouring counties</li>
@@ -23,16 +32,18 @@ This study uses geography as an instrumental variable for county density, contro
 <li>After running, the data are assembled into a regression that can be run in R or Stata</li>
 </ul>
 
-## density.R
-<ul>
-<li>Uses county adjacency & centroid data extracted with ArcGIS (available on request)</li>
-<li>To reduce search space, uses neighbours within a given 'depth' (e.g. neighbours of neighbours is depth 2)</li>
-<li>Density for a given county is its number of neighbours whose centroid is within 100km of that county's centroid</li>
-</ul>
-
-## robustness.R
+<b>robustness.R</b>
 <ul>
 <li>Reassembles data using only adjacent neighbours (sharing a border), rather than within 100km</li>
 <li>Experiments with different specifications for tax enforcements from the firm-level data</li>
 <li>Reassembles data for a subset of counties for which GDP data is available</li>
+</ul>
+
+The Stata do-file shows how to run the main regressions, but isn't meant to be run as-is.
+
+## Possible Extensions
+<ul>
+<li>In theory, I can omit ArcGIS and Stata and do my entire analysis using R.</li>
+<li>My school made me use a custom Office template, but I'd prefer to replicate it in LaTeX.</li>
+<li>I'd love to make this ‘reproducible’, i.e. push a button to replicate the whole thesis from scratch</li>
 </ul>
